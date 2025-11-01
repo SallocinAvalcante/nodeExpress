@@ -1,17 +1,16 @@
-# Use the official Node.js image as the base image 
-FROM node:18 
+# Use a imagem oficial do Node.js
+FROM node:18
 
-# Set the working directory in the container 
-WORKDIR /main 
+# Define o diretório de trabalho
+WORKDIR /app
 
-EXPOSE 3000 
+# Copia os arquivos do projeto
+COPY package*.json ./
+RUN npm install
+COPY . .
 
-# Copy the application files into the working directory 
-COPY . /main 
+# Expõe a porta que o Render usará
+EXPOSE 3000
 
-# Install the application dependencies 
-
-RUN npm install 
-
-# Define the entry point for the container 
-CMD ["npm", "start"] 
+# Comando para iniciar o app
+CMD ["npm", "start"]
