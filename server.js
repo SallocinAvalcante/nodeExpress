@@ -1,8 +1,12 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 
-app.use(express.static('public'))
+// Serve arquivos estáticos da pasta 'public'
+app.use(express.static('public'));
 
-var porta = 3000
+// Render define a porta automaticamente
+const PORT = process.env.PORT || 3000;
 
-app.listen(3000, () => console.log("Servidor rodando: " + `http://localhost:${porta}`))
+app.listen(PORT, () => {
+  console.log(`Servidor rodando: http://localhost:${PORT}`);
+});
