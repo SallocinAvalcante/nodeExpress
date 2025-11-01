@@ -1,11 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifolio Nicollas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');</style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
+
+
 <body>
-    <h1>Hello World</h1>
+
+<header class="cabecalho">
+
+<nav><a href="#">Home</a></nav>
+<nav><a href="#Sobremim">Sobre mim</a></nav>
+<nav><a href="#Projetos">Projetos</a></nav>
+<nav><a href="#Contato">Contatos</a></nav>
+
+</header>
+
+<main>
+    <h1 id="Sobremim">Sobre mim</h1>
+    <div class="sobre">
+        <div>
+            <p class="sobreMim">Sou Nicollas Cavalcante, estudante de Sistemas de Informação no último semestre, com formação técnica em Redes de Computadores pelo SENAI. Tenho experiência acadêmica em linguagens como Python, Java, C++ e PHP, além de conhecimentos em infraestrutura, servidores Linux e Windows, banco de dados MySQL/PostgreSQL e fundamentos de segurança da informação e computação em nuvem (AWS).
+Busco oportunidades como Aprendiz em TI para aplicar meus conhecimentos em programação, suporte técnico e soluções tecnológicas, sempre com foco em aprendizado contínuo e colaboração em equipe. </p>
+        </div>
+
+        <div>
+            <img class="imagemPerfil" src="/img/101356094.jpg" alt="">
+        </div>
+    </div>
+
+    <h1 id="Projetos">Projetos</h1>
+<div class="projetos">
+  <div class="projeto-card">
+    <img class="projetoImagem" src="img/istockphoto-145906365-612x612.jpg" alt="">
+    <div class="projeto-links">
+      <a class="btn-link" href="https://sallocinavalcante.github.io/ApiDollar-AtivAprendizado/" target="_blank">SITE API DÓLAR</a>
+      <a class="btn-link" href="https://github.com/SallocinAvalcante/ApiDollar-AtivAprendizado" target="_blank">Repositório GitHub</a>
+    </div>
+  </div>
+
+  <div class="projeto-card">
+    <img class="projetoImagem" src="/img/veterinary-medicine-logo-illustration-vector.jpg" alt="">
+    <div class="projeto-links">
+      <a class="btn-link" href="https://github.com/SallocinAvalcante/SummitMedVet" target="_blank">Summit: Sistema para Medicina Veterinária| Repositório Git</a>
+    </div>
+  </div>
+
+  <div class="projeto-card">
+    <img class="projetoImagem" src="/img/R.png" alt="">
+    <div class="projeto-links">
+      <a class="btn-link" href="https://github.com/SallocinAvalcante/Atividade3M2" target="_blank">Sistema - Catálogo de Jogos | Repositório Git</a>
+    </div>
+  </div>
+</div>
+
+    <h1 id="Contatos">Contatos</h1>
+    <div class="rodape">
+        <div class="imagemRodape">
+            <p>Acesse meu whatsapp</p>
+            <a href="https://wa.me/5511973434739?text=Ol%C3%A1%20estou%20entrando%20em%20contato%20devido%20ao%20seu%20portif%C3%B3lio%2C%20poder%C3%ADamos%20conversar%3F%20"><img src="/img/4423697.png" alt="" ></a>
+            <br>
+        </div>
+        <div class="formulario">
+            <p>Mande uma mensagem</p>
+            <br>
+            <input type="text" placeholder="Digite seu nome">
+            <br>
+            <input type=" e-mail" placeholder="Digite seu e-mail">
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br>
+            <button onclick="envia()">Enviar</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 - Nicollas Souza - Pode copiar, só não recomendo</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
